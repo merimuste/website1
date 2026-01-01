@@ -10,6 +10,7 @@
     --blush: #E8D5C4;
     --soft-gray: #8B8680;
     --charcoal: #3D3935;
+    --black: #000000;
     --white: #FFFFFF;
 }
 
@@ -42,20 +43,21 @@ h1, h2, h3 {
 }
 
 .name {
-    font-family: 'Tangerine', cursive;
+    font-family: 'Great Vibes', cursive;
     font-size: clamp(4rem, 10vw, 8rem);
-    font-weight: 700;
+    font-weight: 400;
     letter-spacing: 0.02em;
-    color: var(--charcoal);
+    color: var(--black);
     margin-bottom: 1.5rem;
     font-style: normal;
 }
 
 .tagline {
+    font-family: 'Cinzel', serif;
     font-size: clamp(0.9rem, 2vw, 1.2rem);
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 0.08em;
-    color: var(--soft-gray);
+    color: var(--black);
     max-width: 600px;
     margin: 0 auto;
     line-height: 1.6;
@@ -89,25 +91,10 @@ h1, h2, h3 {
     transform: scale(1.02);
 }
 
-/* About Section */
-.about {
-    padding: 6rem 2rem;
-    background-color: var(--white);
-}
-
 .content-wrapper {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
-}
-
-.intro-text {
-    font-size: clamp(1.25rem, 3vw, 2rem);
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 300;
-    line-height: 1.8;
-    color: var(--soft-gray);
-    font-style: italic;
 }
 
 /* Quote Section */
@@ -119,10 +106,10 @@ h1, h2, h3 {
 }
 
 .quote {
-    font-family: 'Tangerine', cursive;
+    font-family: 'Great Vibes', cursive;
     font-size: clamp(2rem, 5vw, 3.5rem);
-    font-weight: 700;
-    color: var(--charcoal);
+    font-weight: 400;
+    color: var(--black);
     margin-bottom: 0.5rem;
     line-height: 1.4;
 }
@@ -131,44 +118,46 @@ h1, h2, h3 {
     font-family: 'Cormorant Garamond', serif;
     font-size: 1rem;
     font-style: italic;
-    color: var(--soft-gray);
+    color: var(--black);
     letter-spacing: 0.1em;
 }
 
 /* Gift Button */
 .gift-button {
-    margin-top: 3rem;
+    margin: 0 auto;
+    display: block;
     padding: 1.25rem 3rem;
     background-color: var(--blush);
-    border: 1px solid var(--soft-gray);
+    border: 1px solid var(--black);
     border-radius: 2px;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cinzel', serif;
     font-size: 1rem;
     font-weight: 500;
     letter-spacing: 0.2em;
-    color: var(--charcoal);
+    color: var(--black);
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .gift-button:hover {
-    background-color: var(--soft-gray);
+    background-color: var(--black);
     color: var(--white);
     transform: translateY(-2px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 .bible-verse {
-    margin-top: 2rem;
+    margin-top: 2.5rem;
     padding: 2rem;
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.5rem;
     font-style: italic;
     line-height: 1.8;
-    color: var(--charcoal);
+    color: var(--black);
     min-height: 60px;
     opacity: 0;
     transition: opacity 0.5s ease;
+    text-align: center;
 }
 
 .bible-verse.show {
@@ -178,13 +167,13 @@ h1, h2, h3 {
 /* Books Section */
 .books {
     padding: 6rem 2rem;
-    background-color: var(--white);
+    background-color: var(--cream);
 }
 
 .books-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -217,7 +206,7 @@ h1, h2, h3 {
     font-family: 'Playfair Display', serif;
     font-size: 1.5rem;
     font-weight: 500;
-    color: var(--charcoal);
+    color: var(--black);
     margin-bottom: 0.5rem;
 }
 
@@ -225,7 +214,7 @@ h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     font-weight: 300;
-    color: var(--soft-gray);
+    color: var(--black);
     letter-spacing: 0.05em;
 }
 
@@ -235,24 +224,22 @@ h1, h2, h3 {
     background-color: var(--cream);
 }
 
-.baking-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2.5rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.baking-item {
+.recipe-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    font-weight: 500;
+    color: var(--black);
     text-align: center;
+    margin-bottom: 2.5rem;
+    letter-spacing: 0.03em;
 }
 
 .baking-photo {
-    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 2.5rem;
     aspect-ratio: 1/1;
     overflow: hidden;
     border-radius: 2px;
-    margin-bottom: 1.5rem;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
 }
 
@@ -268,27 +255,57 @@ h1, h2, h3 {
 }
 
 .recipe-text {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.1rem;
-    font-style: italic;
-    line-height: 1.6;
-    color: var(--soft-gray);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--black);
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Gift Section */
+.gift-section {
+    background-color: var(--cream);
+}
+
+.gift-background {
+    background-image: url('https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=1600&h=400&fit=crop');
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 2rem;
+    position: relative;
+}
+
+.gift-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(249, 246, 241, 0.85);
+}
+
+.gift-background .content-wrapper {
+    position: relative;
+    z-index: 1;
 }
 
 /* Links Section */
 .links {
     padding: 6rem 2rem 4rem;
-    background-color: var(--white);
+    background-color: var(--cream);
 }
 
 .section-title {
+    font-family: 'Playfair Display', serif;
     font-size: clamp(2rem, 4vw, 3rem);
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 0.05em;
     text-align: center;
     margin-bottom: 3rem;
-    color: var(--charcoal);
-    font-style: italic;
+    color: var(--black);
 }
 
 .link-tree {
@@ -334,11 +351,11 @@ h1, h2, h3 {
 }
 
 .link-text {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 1.5rem;
     font-weight: 400;
     letter-spacing: 0.1em;
-    color: var(--charcoal);
+    color: var(--black);
     position: relative;
     z-index: 1;
 }
@@ -353,7 +370,7 @@ footer {
 
 footer p {
     font-size: 0.875rem;
-    color: var(--soft-gray);
+    color: var(--black);
     letter-spacing: 0.1em;
 }
 
@@ -370,16 +387,26 @@ footer p {
 }
 
 /* Responsive Design */
+@media (max-width: 968px) {
+    .books-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
+
 @media (max-width: 768px) {
     .hero {
         min-height: 80vh;
     }
 
-    .about,
     .links,
     .books,
     .baking {
         padding: 4rem 1.5rem;
+    }
+
+    .gift-background {
+        padding: 3rem 1.5rem;
     }
 
     .image-section {
@@ -390,18 +417,12 @@ footer p {
         padding: 1.25rem 1.5rem;
     }
 
-    .books-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-
-    .baking-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-
     .quote {
         font-size: 2rem;
+    }
+
+    .baking-photo {
+        max-width: 100%;
     }
 }
 
@@ -411,7 +432,7 @@ footer p {
     }
 
     .tagline {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
     }
 
     .link-text {
@@ -432,7 +453,11 @@ footer p {
         font-size: 1.25rem;
     }
 
+    .recipe-title {
+        font-size: 1.5rem;
+    }
+
     .recipe-text {
-        font-size: 1rem;
+        font-size: 0.95rem;
     }
 }
