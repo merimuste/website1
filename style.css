@@ -242,7 +242,7 @@ h1, h2, h3 {
     font-size: clamp(1.5rem, 3vw, 2rem);
     font-weight: 400;
     font-style: italic;
-    color: var(--black);
+    color: var(--burgundy);
     text-align: center;
     margin-bottom: 0.75rem;
     margin-top: 0;
@@ -318,7 +318,7 @@ h1, h2, h3 {
     letter-spacing: 0.02em;
     text-align: center;
     margin-bottom: 2rem;
-    color: var(--black);
+    color: var(--burgundy);
 }
 
 .baking .section-title {
