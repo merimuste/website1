@@ -6,16 +6,17 @@
     <title>Welcome</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Tangerine:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <main>
         <!-- Hero Section -->
         <section class="hero">
             <div class="hero-content">
-                <h1 class="name">Your Name</h1>
-                <p class="tagline">Creating moments of beauty</p>
+                <h1 class="name">Maria Muste Ashtor</h1>
+                <p class="tagline">Founding a brand at the intersection of beauty and philanthropy.</p>
             </div>
         </section>
 
@@ -23,6 +24,10 @@
         <section class="image-section">
             <div class="image-container">
                 <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1200&h=800&fit=crop" alt="Serene landscape" class="hero-image">
+            </div>
+            <div class="quote-container">
+                <p class="quote">"Beauty will save the world"</p>
+                <p class="quote-author">— Dostoevsky</p>
             </div>
         </section>
 
@@ -33,6 +38,8 @@
                     Welcome to my corner of the world.
                     A space for creativity, growth, and connection.
                 </p>
+                <button class="gift-button" id="giftButton">YOUR GIFT</button>
+                <div class="bible-verse" id="bibleVerse"></div>
             </div>
         </section>
 
@@ -40,6 +47,63 @@
         <section class="image-section">
             <div class="image-container">
                 <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=800&fit=crop" alt="Mountain vista" class="hero-image">
+            </div>
+        </section>
+
+        <!-- Favorite Books Section -->
+        <section class="books">
+            <div class="content-wrapper">
+                <h2 class="section-title">Favorite Books</h2>
+                <div class="books-grid">
+                    <div class="book-item">
+                        <div class="book-cover">
+                            <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400&h=600&fit=crop" alt="Book 1">
+                        </div>
+                        <h3 class="book-title">The Brothers Karamazov</h3>
+                        <p class="book-author">Fyodor Dostoevsky</p>
+                    </div>
+                    <div class="book-item">
+                        <div class="book-cover">
+                            <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=400&h=600&fit=crop" alt="Book 2">
+                        </div>
+                        <h3 class="book-title">Pride and Prejudice</h3>
+                        <p class="book-author">Jane Austen</p>
+                    </div>
+                    <div class="book-item">
+                        <div class="book-cover">
+                            <img src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?w=400&h=600&fit=crop" alt="Book 3">
+                        </div>
+                        <h3 class="book-title">The Idiot</h3>
+                        <p class="book-author">Fyodor Dostoevsky</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Most Recently Baked Section -->
+        <section class="baking">
+            <div class="content-wrapper">
+                <h2 class="section-title">Most Recently Baked</h2>
+                <div class="baking-grid">
+                    <div class="baking-item">
+                        <div class="baking-photo">
+                            <img src="https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?w=500&h=500&fit=crop" alt="Baked goods">
+                        </div>
+                        <p class="recipe-text">Lavender honey madeleines with a delicate shell-like shape, infused with French lavender and local wildflower honey</p>
+                    </div>
+                    <div class="baking-item">
+                        <div class="baking-photo">
+                            <img src="https://images.unsplash.com/photo-1612198188060-c7c2a3b66eae?w=500&h=500&fit=crop" alt="Baked goods">
+                        </div>
+                        <p class="recipe-text">Rose water and pistachio financiers with crushed pistachios and a hint of orange blossom water</p>
+                    </div>
+                    <div class="baking-item">
+                        <div class="baking-photo">
+                            <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=500&h=500&fit=crop" alt="Baked goods">
+                        </div>
+                        <p class="recipe-text">Classic French macarons filled with vanilla bean buttercream and fresh raspberry compote</p>
+                    </div>
+                </div>
             </div>
         </section>
 
