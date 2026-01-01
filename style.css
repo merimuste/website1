@@ -141,19 +141,19 @@ h1, h2, h3 {
     display: block;
     padding: 1.25rem 3rem;
     background-color: var(--blush);
-    border: 1px solid var(--black);
+    border: 1px solid var(--burgundy);
     border-radius: 2px;
     font-family: 'Cinzel', serif;
     font-size: 1rem;
     font-weight: 500;
     letter-spacing: 0.2em;
-    color: var(--black);
+    color: var(--burgundy);
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .gift-button:hover {
-    background-color: var(--black);
+    background-color: var(--burgundy);
     color: var(--white);
     transform: translateY(-2px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
@@ -166,7 +166,7 @@ h1, h2, h3 {
     font-size: 1.5rem;
     font-style: italic;
     line-height: 1.8;
-    color: var(--black);
+    color: var(--burgundy);
     min-height: 60px;
     opacity: 0;
     transition: opacity 0.5s ease;
@@ -322,7 +322,7 @@ h1, h2, h3 {
 }
 
 .baking .section-title {
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.1rem;
 }
 
 .link-tree {
