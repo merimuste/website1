@@ -1,0 +1,236 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cream: #F9F6F1;
+    --blush: #E8D5C4;
+    --soft-gray: #8B8680;
+    --charcoal: #3D3935;
+    --white: #FFFFFF;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--cream);
+    color: var(--charcoal);
+    line-height: 1.8;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, var(--cream) 0%, var(--blush) 100%);
+}
+
+.hero-content {
+    text-align: center;
+    animation: fadeIn 1.5s ease-in;
+}
+
+.name {
+    font-size: clamp(3rem, 8vw, 6rem);
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    color: var(--charcoal);
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+.tagline {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    font-weight: 300;
+    letter-spacing: 0.15em;
+    color: var(--soft-gray);
+    text-transform: lowercase;
+}
+
+/* Image Section */
+.image-section {
+    width: 100%;
+    padding: 4rem 2rem;
+    background-color: var(--cream);
+}
+
+.image-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 2px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    aspect-ratio: 3/2;
+    transition: transform 0.6s ease;
+}
+
+.image-container:hover .hero-image {
+    transform: scale(1.02);
+}
+
+/* About Section */
+.about {
+    padding: 6rem 2rem;
+    background-color: var(--white);
+}
+
+.content-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro-text {
+    font-size: clamp(1.25rem, 3vw, 2rem);
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    line-height: 1.8;
+    color: var(--soft-gray);
+    font-style: italic;
+}
+
+/* Links Section */
+.links {
+    padding: 6rem 2rem 4rem;
+    background-color: var(--cream);
+}
+
+.section-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--charcoal);
+    font-style: italic;
+}
+
+.link-tree {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.link-item {
+    display: block;
+    padding: 1.5rem 2rem;
+    background-color: var(--white);
+    border: 1px solid var(--blush);
+    border-radius: 2px;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.link-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(232, 213, 196, 0.3), transparent);
+    transition: left 0.5s ease;
+}
+
+.link-item:hover::before {
+    left: 100%;
+}
+
+.link-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-color: var(--soft-gray);
+}
+
+.link-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    color: var(--charcoal);
+    position: relative;
+    z-index: 1;
+}
+
+/* Footer */
+footer {
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: var(--white);
+    border-top: 1px solid var(--blush);
+}
+
+footer p {
+    font-size: 0.875rem;
+    color: var(--soft-gray);
+    letter-spacing: 0.1em;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        min-height: 80vh;
+    }
+
+    .about,
+    .links {
+        padding: 4rem 1.5rem;
+    }
+
+    .image-section {
+        padding: 2rem 1rem;
+    }
+
+    .link-item {
+        padding: 1.25rem 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .name {
+        font-size: 2.5rem;
+    }
+
+    .tagline {
+        font-size: 1rem;
+    }
+
+    .link-text {
+        font-size: 1.25rem;
+    }
+}
