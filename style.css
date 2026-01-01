@@ -1,4 +1,11 @@
 /* Global Styles */
+@font-face {
+    font-family: 'Vanolines';
+    src: url('Dh Vanolines DEMO.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -34,7 +41,7 @@ h1, h2, h3 {
     align-items: center;
     justify-content: center;
     padding: 2rem;
-    background: linear-gradient(135deg, var(--cream) 0%, var(--blush) 100%);
+    background-color: var(--cream);
 }
 
 .hero-content {
@@ -43,7 +50,7 @@ h1, h2, h3 {
 }
 
 .name {
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Vanolines', cursive;
     font-size: clamp(4rem, 10vw, 8rem);
     font-weight: 400;
     letter-spacing: 0.02em;
@@ -98,28 +105,33 @@ h1, h2, h3 {
 }
 
 /* Quote Section */
+.quote-section {
+    padding: 4rem 2rem;
+    background-color: var(--cream);
+}
+
 .quote-container {
-    max-width: 800px;
-    margin: 3rem auto 0;
+    max-width: 900px;
+    margin: 0 auto;
     text-align: center;
     padding: 0 2rem;
 }
 
 .quote {
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Vanolines', cursive;
     font-size: clamp(2rem, 5vw, 3.5rem);
     font-weight: 400;
     color: var(--black);
-    margin-bottom: 0.5rem;
     line-height: 1.4;
 }
 
 .quote-author {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1rem;
+    font-size: clamp(1rem, 2vw, 1.2rem);
     font-style: italic;
     color: var(--black);
-    letter-spacing: 0.1em;
+    letter-spacing: 0.05em;
+    margin-left: 0.5rem;
 }
 
 /* Gift Button */
@@ -224,14 +236,14 @@ h1, h2, h3 {
     background-color: var(--cream);
 }
 
-.recipe-title {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(1.75rem, 3vw, 2.5rem);
-    font-weight: 500;
+.recipe-name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-weight: 400;
     color: var(--black);
     text-align: center;
     margin-bottom: 2.5rem;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.05em;
 }
 
 .baking-photo {
@@ -273,8 +285,11 @@ h1, h2, h3 {
     background-image: url('https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=1600&h=400&fit=crop');
     background-size: cover;
     background-position: center;
-    padding: 4rem 2rem;
+    min-height: 400px;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .gift-background::before {
@@ -299,12 +314,12 @@ h1, h2, h3 {
 }
 
 .section-title {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(2rem, 4vw, 3rem);
+    font-family: 'Vanolines', cursive;
+    font-size: clamp(2.5rem, 5vw, 4rem);
     font-weight: 400;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.02em;
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     color: var(--black);
 }
 
@@ -401,12 +416,13 @@ footer p {
 
     .links,
     .books,
-    .baking {
+    .baking,
+    .quote-section {
         padding: 4rem 1.5rem;
     }
 
     .gift-background {
-        padding: 3rem 1.5rem;
+        min-height: 300px;
     }
 
     .image-section {
@@ -453,11 +469,22 @@ footer p {
         font-size: 1.25rem;
     }
 
-    .recipe-title {
-        font-size: 1.5rem;
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .recipe-name {
+        font-size: 1rem;
     }
 
     .recipe-text {
         font-size: 0.95rem;
+    }
+
+    .quote-author {
+        font-size: 0.9rem;
+        display: block;
+        margin-left: 0;
+        margin-top: 1rem;
     }
 }
