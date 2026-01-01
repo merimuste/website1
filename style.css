@@ -18,6 +18,7 @@
     --soft-gray: #8B8680;
     --charcoal: #3D3935;
     --black: #000000;
+    --burgundy: #6B1C23;
     --white: #FFFFFF;
 }
 
@@ -54,7 +55,7 @@ h1, h2, h3 {
     font-size: clamp(4rem, 10vw, 8rem);
     font-weight: 400;
     letter-spacing: 0.02em;
-    color: var(--black);
+    color: var(--burgundy);
     margin-bottom: 1.5rem;
     font-style: normal;
 }
@@ -64,7 +65,7 @@ h1, h2, h3 {
     font-size: clamp(0.9rem, 2vw, 1.2rem);
     font-weight: 400;
     letter-spacing: 0.08em;
-    color: var(--black);
+    color: var(--burgundy);
     max-width: 600px;
     margin: 0 auto;
     line-height: 1.6;
@@ -121,7 +122,7 @@ h1, h2, h3 {
     font-family: 'Vanolines', cursive;
     font-size: clamp(2rem, 5vw, 3.5rem);
     font-weight: 400;
-    color: var(--black);
+    color: var(--burgundy);
     line-height: 1.4;
 }
 
