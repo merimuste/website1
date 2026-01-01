@@ -278,33 +278,8 @@ h1, h2, h3 {
 
 /* Gift Section */
 .gift-section {
+    padding: 6rem 2rem;
     background-color: var(--cream);
-}
-
-.gift-background {
-    background-image: url('https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=1600&h=400&fit=crop');
-    background-size: cover;
-    background-position: center;
-    min-height: 400px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.gift-background::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(249, 246, 241, 0.85);
-}
-
-.gift-background .content-wrapper {
-    position: relative;
-    z-index: 1;
 }
 
 /* Links Section */
@@ -417,12 +392,9 @@ footer p {
     .links,
     .books,
     .baking,
-    .quote-section {
+    .quote-section,
+    .gift-section {
         padding: 4rem 1.5rem;
-    }
-
-    .gift-background {
-        min-height: 300px;
     }
 
     .image-section {
