@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Generator</title>
+    <style>
+        @font-face {
+            font-family: 'Vanolines';
+            src: url('Dh Vanolines DEMO.otf') format('opentype');
+        }
+
+        body {
+            margin: 0;
+            padding: 40px;
+            background: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+            font-weight: normal;
+        }
+
+        .logo-box {
+            background: white;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 40px;
+            border: 2px solid #ddd;
+        }
+
+        /* Square logo - 1000x1000px for high resolution */
+        .square-logo {
+            width: 1000px;
+            height: 1000px;
+        }
+
+        .square-logo .text {
+            font-family: 'Vanolines', cursive;
+            font-size: 140px;
+            font-weight: 400;
+            color: black;
+            letter-spacing: 0.05em;
+            text-align: center;
+            line-height: 1.2;
+        }
+
+        /* Wordmark - 2688x512px (1344x256 @ 2x for retina) */
+        .wordmark-logo {
+            width: 2688px;
+            height: 512px;
+        }
+
+        .wordmark-logo .text {
+            font-family: 'Vanolines', cursive;
+            font-size: 200px;
+            font-weight: 400;
+            color: black;
+            letter-spacing: 0.05em;
+        }
+
+        .instructions {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border: 1px solid #ddd;
+        }
+
+        .instructions h1 {
+            margin-top: 0;
+            font-size: 18px;
+        }
+
+        .instructions ol {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        .instructions li {
+            margin: 8px 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="instructions">
+            <h1>📸 How to Screenshot for Substack</h1>
+            <ol>
+                <li><strong>For Publication Logo (square):</strong> Screenshot ONLY the white box below (not the label). Make sure you capture the entire white box edge-to-edge.</li>
+                <li><strong>For Publication Wordmark (wide):</strong> Screenshot ONLY the second white box. Capture it edge-to-edge.</li>
+                <li><strong>Tip:</strong> Use a screenshot tool that lets you select the exact area (like Snipping Tool on Windows, or Shift+Cmd+4 on Mac).</li>
+                <li><strong>Crop tightly:</strong> Make sure there's no gray background in your screenshot - only the white box with the text.</li>
+            </ol>
+        </div>
+
+        <h2>PUBLICATION LOGO (Square - Screenshot this box only):</h2>
+        <div class="logo-box square-logo">
+            <div class="text">Above<br>all,<br>love.</div>
+        </div>
+
+        <br><br>
+
+        <h2>PUBLICATION WORDMARK (Wide - Screenshot this box only):</h2>
+        <div class="logo-box wordmark-logo">
+            <div class="text">Above all, love.</div>
+        </div>
+    </div>
+</body>
+</html>
