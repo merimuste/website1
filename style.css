@@ -37,13 +37,13 @@ h1, h2, h3 {
 
 /* Substack Header Section */
 .substack-header {
-    min-height: 20vh;
+    min-height: 25vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
-    background-color: var(--white);
-    border-bottom: 1px solid var(--blush);
+    padding: 4rem 2rem;
+    background-color: #FFFFFF;
+    border-bottom: none;
 }
 
 .substack-header-content {
@@ -52,10 +52,10 @@ h1, h2, h3 {
 
 .substack-name {
     font-family: 'Vanolines', cursive;
-    font-size: 48px;
+    font-size: 60px;
     font-weight: 400;
-    letter-spacing: 2px;
-    color: var(--charcoal);
+    letter-spacing: 3px;
+    color: #000000;
     margin: 0;
     font-style: normal;
 }
