@@ -35,6 +35,31 @@ h1, h2, h3 {
     font-weight: 300;
 }
 
+/* Substack Header Section */
+.substack-header {
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: var(--white);
+    border-bottom: 1px solid var(--blush);
+}
+
+.substack-header-content {
+    text-align: center;
+}
+
+.substack-name {
+    font-family: 'Vanolines', cursive;
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: var(--charcoal);
+    margin: 0;
+    font-style: normal;
+}
+
 /* Hero Section */
 .hero {
     min-height: 100vh;
